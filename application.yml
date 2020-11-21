@@ -1,0 +1,3 @@
+logging:
+  pattern:
+    console: '%logger{30}:%line - %msg%n'
