@@ -1,3 +1,11 @@
 logging:
+  level:
+    io:
+      netty: DEBUG
+      reactor: DEBUG
+    org.springframework:
+      data.r2dbc: INFO
+      boot.web: INFO
+    com.kakaopay: INFO
   pattern:
     console: '%logger{30}:%line - %msg%n'
