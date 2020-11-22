@@ -19,12 +19,17 @@ spring:
     url: r2dbc:h2:mem:///seefing?options=DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     username: sunga
     password: sunga
-
-application:
-  keycloak:
-    auth-url: http://localhost:9080/auth
-    master-realm-id: master
-    custom-realm-id: seeding
-    admin-user-id: sunga
-    admin-user-password: sunga
-    client-id: admin-cli
+management:
+  endpoints:
+    web:
+      base-path: /management
+      exposure:
+        include: ['configprops', 'env', 'health', 'info', 'loggers','threaddump']
+# application:
+#   keycloak:
+#     auth-url: http://localhost:9080/auth
+#     master-realm-id: master
+#     custom-realm-id: seeding
+#     admin-user-id: sunga
+#     admin-user-password: sunga
+#     client-id: admin-cli
