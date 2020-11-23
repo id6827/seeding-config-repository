@@ -19,6 +19,12 @@ spring:
     url: r2dbc:h2:mem:///seefing?options=DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     username: sunga
     password: sunga
+  session:
+    store-type: redis
+  redis:
+    host: localhost
+    password:
+    port: 6379
 management:
   endpoints:
     web:
