@@ -6,6 +6,8 @@ logging:
     org.springframework:
       data.r2dbc: INFO
       boot.web: INFO
+      cloud: DEBUG
+      intergration: DEBUG
     com.kakaopay: INFO
   pattern:
     console: '%logger{30}:%line - %msg%n'
