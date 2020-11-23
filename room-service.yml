@@ -8,11 +8,7 @@ spring:
     stream:
       bindings:
         input:
-          destination: sprinkle-service-input
-          group: sprinkle-service
-          content-type: application/json
-        output:
-          destination: sprinkle-service-output
+          destination: room-service-input
           group: room-service
           content-type: application/json
   r2dbc:
